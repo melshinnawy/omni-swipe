@@ -1,0 +1,5 @@
+# Placeholder for v0.2 policy engine
+policies:
+  - id: no-committed-critical-secrets
+    when: {secret.severity: critical}
+    action: fail
